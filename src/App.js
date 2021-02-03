@@ -49,6 +49,19 @@ const generateTheme = () => {
   ]
   const randomThemeindex = getRandomInt(0,presetThemes.length);
   const theme = presetThemes[randomThemeindex];
+
+  switch(randomThemeindex) {
+    case 0:
+      document.getElementById("favicon").href = "https://drive.google.com/uc?export=view&id=1Rb9JdoAoiDBMIXp4gNWqsKceDNAhw67M"
+      break;
+    case 1:
+      document.getElementById("favicon").href = "https://drive.google.com/uc?export=view&id=1qjVeP7EhH07ZFIAEiW8HMdOflHqVGcbO"
+      break;
+    case 2:
+      document.getElementById("favicon").href = "https://drive.google.com/uc?export=view&id=1e3Jgg7RItgIC5wkaxmeHaLbQOwR113TG"
+      break;
+  }
+
   console.log(theme);
   return theme;
 }
