@@ -427,7 +427,7 @@ class App extends React.Component {
     return (
       <div id="App" style={{backgroundColor: theme.backgroundColor}}>
         {!this.state.isMuted ? (
-          <svg className="muteButton" onClick={() => this.toggleMute(false)} viewBox="0 0 75 75" fill={theme.navTextColor} height="18px" style={{position: "absolute", top: "7px", right: "35px"}}>
+          <svg className="muteButton" onClick={() => this.toggleMute(true)} viewBox="0 0 75 75" fill={theme.navTextColor} height="18px" style={{position: "absolute", top: "7px", right: "35px"}}>
             <polygon stroke={theme.navTextColor} stroke-width="5" stroke-linejoin="round" points="39.389,13.769 22.235,28.606 6,28.606 6,47.698 21.989,47.698 39.389,62.75 "/>
             <path fill="none" stroke={theme.navTextColor} stroke-width="5" stroke-linecap="round" d="M55.081,20.537
               c3.695,4.986,5.885,11.157,5.885,17.84c0,6.62-2.151,12.737-5.788,17.698 M61.71,62.61c5.267-6.666,8.418-15.08,8.418-24.232
@@ -435,7 +435,7 @@ class App extends React.Component {
             />
           </svg>
         ) : (
-          <svg className="muteButton" onClick={() => this.toggleMute(true)} viewBox="0 0 75 75" fill={theme.navTextColor} height="18px" style={{position: "absolute", top: "7px", right: "35px"}}>
+          <svg className="muteButton" onClick={() => this.toggleMute(false)} viewBox="0 0 75 75" fill={theme.navTextColor} height="18px" style={{position: "absolute", top: "7px", right: "35px"}}>
             <polygon
               id="polygon1"
               points="39.389,13.769 22.235,28.606 6,28.606 6,47.699 21.989,47.699 39.389,62.75 39.389,13.769"
