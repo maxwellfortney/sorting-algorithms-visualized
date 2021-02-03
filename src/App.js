@@ -426,7 +426,7 @@ class App extends React.Component {
     const {theme, barsArray} = this.state;
     return (
       <div id="App" style={{backgroundColor: theme.backgroundColor}}>
-        {this.state.isMuted ? (
+        {!this.state.isMuted ? (
           <svg className="muteButton" onClick={() => this.toggleMute(false)} viewBox="0 0 75 75" fill={theme.navTextColor} height="18px" style={{position: "absolute", top: "7px", right: "35px"}}>
             <polygon stroke={theme.navTextColor} stroke-width="5" stroke-linejoin="round" points="39.389,13.769 22.235,28.606 6,28.606 6,47.698 21.989,47.698 39.389,62.75 "/>
             <path fill="none" stroke={theme.navTextColor} stroke-width="5" stroke-linecap="round" d="M55.081,20.537
