@@ -1,0 +1,87 @@
+#SettingsSelectorsContainer {
+    width: 90%;
+    height: 10vh;
+    min-height: 10vh;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#SortSpeedSelector {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+}
+
+#sortSpeedInput {
+    width: 150px;
+    outline: none;
+    margin: auto 0;
+}
+
+#ArraySizeSelector {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+}
+
+#arraySizeInput {
+  width: 250px;
+  outline: none;
+  margin: auto 0;
+}
+
+.aSetttingMenuBar {
+    height: 47px;
+    border-radius: 30px;    
+    display: flex;
+}
+
+#SortTypeSelector {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.aSortTypeButton {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 14px 14px;
+    border-radius: 25px;
+    transition: ease-in-out .1s;
+}
+
+.aSortTypeButton:hover {
+    filter: hue-rotate(50);
+    cursor: pointer;
+}
+
+#StartSortSelector {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;    
+}
+
+#StartSortSelector div {
+    transition: ease-in-out .12s;        
+}
+
+#StartSortSelector div:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
